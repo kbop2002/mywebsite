@@ -1,12 +1,16 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Route, Routes} from "react-router-dom"
 import './index.css';
-import reportWebVitals from './reportWebVitals';
 import Index from './pages';
 import LoginPage from './pages/login_page';
 import SigninPage from './pages/signin_page';
+import HomePage from './pages/homePage.tsx';
 
+const defaultUser = {
+  username: 'TestUser',
+  userID : '12345',
+  name : 'MyName'
+}
 export default function App(){
   return(
     <BrowserRouter>
@@ -14,6 +18,7 @@ export default function App(){
         <Route path='/' element={<Index/>} />
         <Route path='/login' element ={<LoginPage/>}/>
         <Route path='/signin' element ={<SigninPage/>}/>
+        <Route path='/home' element ={<HomePage user={defaultUser}/>}/>
       </Routes>
     </BrowserRouter>
   )

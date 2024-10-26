@@ -17,7 +17,7 @@ export default function LoginPage(){
                 marginBottom:"100px"
             }}>Welcome back to PieCart</Typography>
             <ValidationForm/>
-            <SubmitButton/>
+            <SubmitButton route={'home'}/>
         </div>
         </>
     )
