@@ -37,7 +37,6 @@ function ResponsiveAppBar() {
 
   return (
     <AppBar position="static" sx={{
-        marginBottom:'50px'
     }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
@@ -57,7 +56,7 @@ function ResponsiveAppBar() {
               textDecoration: 'none',
             }}
           >
-            LOGO
+            PieCart
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>

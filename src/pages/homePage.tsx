@@ -9,15 +9,8 @@ export default function HomePage({ user }) {
             <ResponsiveAppBar />
 
             {/* Welcome Card Section */}
-            <div style={{ display: "flex", justifyContent: "center", marginTop: "100px" }}>
-                <Card
-                    style={{
-                        padding: "20px",
-                        maxWidth: "400px",
-                        backgroundColor: "#f5f5f5",
-                    }}
-                >
-                    <CardContent>
+            <div style={{ display: "flex", justifyContent: "center", textAlign:'center', height:'30vh'}}>
+                <div style={{ alignSelf: 'center'}}>
                         <Typography variant="h5" component="div">
                             Welcome, {user.name}!
                         </Typography>
@@ -27,13 +20,11 @@ export default function HomePage({ user }) {
                         <Typography color="textSecondary">
                             UserID: {user.userID}
                         </Typography>
-                    </CardContent>
-                    <CardActions>
+ 
                         <Button variant="contained" color="primary">
                             Log Out
                         </Button>
-                    </CardActions>
-                </Card>
+                </div>
             </div>
 
             {/* Deals Section */}
@@ -53,9 +44,9 @@ export default function HomePage({ user }) {
                         key={index}
                         style={{
                             width: "300px",
-                            height: '20vh',
+                            height: '22vh',
                             padding: "10px",
-                            backgroundColor: "#ffffff",
+                            backgroundColor: "#f5f5f5",
                         }}
                     >
                         <CardContent>
@@ -88,25 +79,83 @@ export default function HomePage({ user }) {
             }}>
                 <Card
                     style={{
-                        height: '200px',
-                        width: '200px',
+                        height: '30vh',
+                        width: '33vw',
                         backgroundColor: "#f5f5f5",
+                        display:'flex',
+                        justifyContent:'center'
                     }}
-                />
+                >
+                        <CardContent>
+                            <Typography variant="h6" component="div">
+                                {/* Insert something abt View Past orders*/ }
+                            </Typography>
+                            <Typography color="textSecondary">
+                                {/* Insert something abt View Past orders*/ }
+                            </Typography>
+                            <Typography variant="body2" color="textSecondary">
+                                {/* Insert something abt View Past orders*/ }
+                            </Typography>
+                        </CardContent>
+                        <CardActions>
+                            <Button variant="contained" color="primary">
+                                View Past Orders
+                            </Button>
+                        </CardActions>
+                </Card>
                 <Card
                     style={{
-                        height: '200px',
-                        width: '200px',
+                        height: '30vh',
+                        width: '33vw',
                         backgroundColor: "#f5f5f5",
+                        display:'flex',
+                        justifyContent:'center'
                     }}
-                />
+                >
+                        <CardContent>
+                            <Typography variant="h6" component="div">
+                                {/* Insert something abt Place new orders*/ }
+                            </Typography>
+                            <Typography color="textSecondary">
+                                {/* Insert something abt place new orders*/ }
+                            </Typography>
+                            <Typography variant="body2" color="textSecondary">
+                                {/* Insert something abt place new orders*/ }
+                            </Typography>
+                        </CardContent>
+                        <CardActions>
+                            <Button variant="contained" color="primary">
+                                Place New Order
+                            </Button>
+                        </CardActions>
+                </Card>
                 <Card
                     style={{
-                        height: '200px',
-                        width: '200px',
-                        backgroundColor: "black",
+                        height: '30vh',
+                        width: '33vw',
+                        backgroundColor: "#f5f5f5",
+                        display:'flex',
+                        justifyContent:'center'
                     }}
-                />
+                >
+                    <CardContent>
+                            <Typography variant="h6" component="div">
+                                {/* Insert something abt View current orders*/ }
+                            </Typography>
+                            <Typography color="textSecondary">
+                                {/* Insert something abt View current orders*/ }
+                            </Typography>
+                            <Typography variant="body2" color="textSecondary">
+                                {/* Insert something abt View current orders*/ }
+                            </Typography>
+                        </CardContent>
+                        <CardActions>
+                            <Button variant="contained" color="primary">
+                                View Order Status
+                            </Button>
+                        </CardActions>
+                </Card>
+
             </div>
         </>
     );
